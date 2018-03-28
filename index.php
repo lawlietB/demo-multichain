@@ -38,17 +38,17 @@
 			<nav class="navbar navbar-default">
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="./?chain=<?php echo html($chain)?>" class="pair-first">Node</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=permissions" class="pair-second">| Permissions</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=issue" class="pair-first">Issue Asset</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=update" class="pair-second">| 	Update</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=balance" class="pair-first">Balance</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=send" class="pair-second">| 	Send</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=offer" class="pair-first">Create Offer</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=accept" class="pair-second">| Accept</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=create">Create Stream</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=publish">Publish</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=view">View Streams</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>" class="pair-first">Node |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=permissions" class="pair-center">|  Permissions |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=issue" class="pair-center">|  Issue Asset |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=update" class="pair-center">|  Update |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=balance" class="pair-center">|  Balance |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=send" class="pair-center"> |  Send |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=offer" class="pair-center">|  Create Offer |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=accept" class="pair-center">|  Accept |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=create" class="pair-center">|  Create Stream |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=publish" class="pair-center">|  Publish |</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=view" class="pair-last">|  View Streams</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -61,6 +61,7 @@
 			case 'permissions':
 			case 'issue':
 			case 'update':
+			case 'balance':
 			case 'send':
 			case 'offer':
 			case 'accept':
