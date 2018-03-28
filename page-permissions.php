@@ -62,7 +62,6 @@
 	if (no_displayed_error_result($listpermissions, multichain('listpermissions'))) {
 		
 		$addresspermissions=array();
-		
 		foreach ($keymyaddresses as $address => $dummy)
 			$addresspermissions[$address]=array(); // ensure all local addresses shown as well
 		

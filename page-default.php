@@ -9,7 +9,6 @@
 					<h3>My Node</h3>
 <?php
 	$getinfo=multichain_getinfo();
-
 	if (is_array($getinfo)) {
 ?>
 					<table class="table table-bordered table-striped">

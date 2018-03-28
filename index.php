@@ -48,7 +48,8 @@
 						<li><a href="./?chain=<?php echo html($chain)?>&page=accept" class="pair-center">|  Accept |</a></li>
 						<li><a href="./?chain=<?php echo html($chain)?>&page=create" class="pair-center">|  Create Stream |</a></li>
 						<li><a href="./?chain=<?php echo html($chain)?>&page=publish" class="pair-center">|  Publish |</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=view" class="pair-last">|  View Streams</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=view" class="pair-center">|  View Streams|</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=block" class="pair-last">|  View Block</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -68,6 +69,7 @@
 			case 'create':
 			case 'publish':
 			case 'view':
+			case 'block':
 			case 'asset-file':
 				require_once 'page-'.$_GET['page'].'.php';
 				break;
