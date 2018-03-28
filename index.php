@@ -17,7 +17,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>MultiChain Demo</title>
+		<title>Server-Multichain</title>
 		<!--
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -29,7 +29,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1><a href="./">MultiChain Demo</a><?php if (strlen($name)) { ?> &ndash; <?php echo html($name)?><?php } ?></h1>
+			<h1><a href="./">Server <?php if (strlen($name)) { ?> &ndash; <?php echo html($name)?><?php } ?></a></h1>
 <?php
 	if (strlen($chain)) {
 		$name=@$config[$chain]['name'];
@@ -38,11 +38,12 @@
 			<nav class="navbar navbar-default">
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="./?chain=<?php echo html($chain)?>">Node</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=permissions">Permissions</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>" class="pair-first">Node</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=permissions" class="pair-second">| Permissions</a></li>
 						<li><a href="./?chain=<?php echo html($chain)?>&page=issue" class="pair-first">Issue Asset</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=update" class="pair-second">| Update</a></li>
-						<li><a href="./?chain=<?php echo html($chain)?>&page=send">Send</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=update" class="pair-second">| 	Update</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=balance" class="pair-first">Balance</a></li>
+						<li><a href="./?chain=<?php echo html($chain)?>&page=send" class="pair-second">| 	Send</a></li>
 						<li><a href="./?chain=<?php echo html($chain)?>&page=offer" class="pair-first">Create Offer</a></li>
 						<li><a href="./?chain=<?php echo html($chain)?>&page=accept" class="pair-second">| Accept</a></li>
 						<li><a href="./?chain=<?php echo html($chain)?>&page=create">Create Stream</a></li>
